@@ -47,7 +47,23 @@ Make sure to add the `.env` file to your `.gitignore` to prevent accidentally co
 chmod +x gitpushremotepull.sh
 ```
 
-## 🌎 Making it Available Globally on macOS
+## 🚀 Usage
+
+### Using the local script:
+
+```bash
+./gitpushremotepull.sh [branch_name]
+```
+
+### Using the global command (after setting up the symbolic link):
+
+```bash
+gitpushremotepull [branch_name]
+```
+
+If you don't specify a branch name, the script will use your current branch.
+
+## 🌎 OPTIONAL:Making it Available Globally on macOS
 
 To use this script as a command from anywhere on your Mac:
 
@@ -84,34 +100,3 @@ For Bash (older macOS versions):
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 ```
-
-## 🚀 Usage
-
-### Using the local script:
-
-```bash
-./gitpushremotepull.sh [branch_name]
-```
-
-### Using the global command (after setting up the symbolic link):
-
-```bash
-gitpushremotepull [branch_name]
-```
-
-If you don't specify a branch name, the script will use your current branch.
-
-## ✨ Features
-
-- 🎨 Color-coded output for better visibility:
-  - 🟢 **Green**: Success messages
-  - 🔴 **Red**: Error messages
-  - 🟣 **Purple**: In-progress operations
-- ✅ Error handling at each step
-- 🔄 Automatically detects current branch
-- 📂 Preserves your working directory on the remote server 
-
-## 📜 License
-
-This project is licensed under the [WTFPL License](LICENSE) - Do What The F*ck You Want To Public License. 🏴‍☠️
-This means you are free to use, modify, distribute, or do whatever you want with this code without any restrictions. 
