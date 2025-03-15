@@ -20,7 +20,7 @@ This script automates the process of pushing commits, then pulling them via SSH 
 
 ### 1. Configure your .env file 📝
 
-Create a `.env` file in the same directory as the script with the following content:
+Create a `.env` file in your git repository with the following content:
 
 ```
 # SSH credentials
@@ -30,7 +30,7 @@ SSH_HOST=your.remote.machine.com  # e.g., 192.168.1.100 or example.com
 REMOTE_PATH=/path/to/git/repository
 ```
 
-You can copy and edit the included `.env.example` file:
+You can copy and edit the included `.env.example` file, but make sure to remove the `.example` extension and place it in the root of your git repository.
 
 ```bash
 cp .env.example .env
