@@ -5,16 +5,16 @@ This script automates the process of pushing your changes to a Git repository an
 1. 📤 Pushes your current branch (or a specified branch) to the remote Git repository
 2. 🔐 SSHs into your remote server
 3. 🔄 Performs a `git fetch` and `git reset --hard` to update the remote repository
-*IMPORTANT* This script does not pull (even though it's called "gitpushremotepull" ), it only pushes and updates the remote repository. All changes on remote server are lost. Use with caution.
 
-> **Note:** ⚠️ This script is designed for quick updates of existing repositories. It requires that Git remotes are already properly set up in both your local and remote directories. It does not clone repositories or perform initial setup.
+**Note:** ⚠️ This script does not pull (even though it's called "gitpushremotepull" ), it only pushes and updates the remote repository. All changes on remote server are lost. Use with caution.
 
 ## 📋 Prerequisites
 
 - 🛠️ Git installed and configured on both local and remote machines
 - 📁 Existing Git repository with properly configured remotes on both local and remote directories
 - 🔑 SSH access to the remote server
-- 🔒 Proper permissions to push to the Git remote and update the remote directory
+
+**Note:** ⚠️ This script is designed for quick updates of existing repositories. It does not clone repositories or perform initial setup.
 
 ## 🔧 Setup
 
@@ -37,9 +37,7 @@ cp .env.example .env
 # Then edit the .env file with your preferred text editor
 ```
 
-### ⚠️ Important Security Note
-
-Make sure to add the `.env` file to your `.gitignore` to prevent accidentally committing sensitive credentials to your repository.
+**Note:** ⚠️ Make sure to add the `.env` file to your `.gitignore` to prevent accidentally committing sensitive credentials to your repository.
 
 ### 2. Make the script executable ✨
 
