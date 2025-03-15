@@ -109,3 +109,8 @@ If you don't specify a branch name, the script will use your current branch.
 - ✅ Error handling at each step
 - 🔄 Automatically detects current branch
 - 📂 Preserves your working directory on the remote server 
+
+## License
+
+This project is licensed under the [WTFPL License](LICENSE) - Do What The F*ck You Want To Public License. 
+This means you are free to use, modify, distribute, or do whatever you want with this code without any restrictions. 
