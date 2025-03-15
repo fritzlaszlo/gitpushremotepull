@@ -1,18 +1,18 @@
 # Git Push and Remote Pull Script 🚀
 
-This script automates the process of pushing your changes to a Git repository and then updating a remote server via SSH. It handles the following steps in sequence:
+This script automates the process of pushing commits, then pulling them via SSH on a remote machine. It handles the following steps in sequence:
 
 1. 📤 Pushes your current branch (or a specified branch) to the remote Git repository
-2. 🔐 SSHs into your remote server
+2. 🔐 SSHs into your remote machine
 3. 🔄 Performs a `git fetch` and `git reset --hard` to update the remote repository
 
-**Note:** ⚠️ This script does not pull (even though it's called "gitpushremotepull" ), it only pushes and updates the remote repository. All changes on remote server are lost. Use with caution.
+**Note:** ⚠️ This script does not pull (even though it's called "gitpushremotepull" ), it only pushes and updates the remote repository. All changes on the remote machine are lost. Use with caution!
 
 ## 📋 Prerequisites
 
 - 🛠️ Git installed and configured on both local and remote machines
 - 📁 Existing Git repository with properly configured remotes on both local and remote directories
-- 🔑 SSH access to the remote server
+- 🔑 SSH access to the remote machine
 
 **Note:** ⚠️ This script is designed for quick updates of existing repositories. It does not clone repositories or perform initial setup.
 
@@ -25,8 +25,8 @@ Create a `.env` file in the same directory as the script with the following cont
 ```
 # SSH credentials
 SSH_USER=your_username
-SSH_HOST=your.server.com
-# The full path to the git repository on the remote server
+SSH_HOST=your.remote.machine.com  # e.g., 192.168.1.100 or example.com
+# The full path to the git repository on the remote machine
 REMOTE_PATH=/path/to/git/repository
 ```
 
